@@ -55,7 +55,7 @@ module DataMapper
     def to_csv(*args)
       result = ''
       each do |item|
-        result << item.to_csv(args.first) + "\n"
+        result << item.to_csv(args.first)
       end
       result
     end
